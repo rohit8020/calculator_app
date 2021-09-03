@@ -167,7 +167,7 @@ footer .footer{
     }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 420px) {
     .calculator{
         width: 90%;
         height: 90%;
