@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 90vh;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 50%;
+  height: 90%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 20px solid crimson;
+  border-top-left-radius: 10px;border-top-right-radius: 10px;
+  border-bottom: 10px solid crimson;
+}
+
+.input-box{
+    width: 90%;
+    height: 15%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    border: 2px solid crimson;
+}
+
+input:focus{
+    outline: none;
+}
+
+.operator-btns {
+  width: 90%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.num-c-point-equal {
+  width: 90%;
+  height: 75%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.num-point-c {
+    width: 87%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+}
+
+.operator{
+    background-color: crimson;
+    width: 25%;
+    height: 100%;
+    margin: 0 .5rem;
+    font-size: 2rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.operator:first-of-type{
+    margin-left: 0;
+}
+.operator:last-of-type{
+    margin-right: 0;
+}
+
+.item {
+    background-color: crimson;
+    width: 22%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    justify-content: center;
+    margin: 0 .3rem;
+} 
+
+.equal-container{
+    width: 15%;
+    height: 90%;
+}
+
+.equal {
+  background-color: crimson;
+  height: 100%;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 900;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    box-shadow: 0 1rem 2rem rgba(255, 0, 0, 0.2);
+}
+
+.btn:active{
+    outline: none;
+    transform: translateY(1px) scale(.98);
+    box-shadow: 0 .5rem 1rem rgba(255, 0, 0, 0.2);
+    z-index: 10;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(7, 2, 32);
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer{
+    color: aqua;
+}
+
+@media only screen and (max-width: 900px) {
+    .item{
+        width: 27%;
+        height: 20%;
+        margin: .4rem .4rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .item{
+        width: 24%;
+        height: 20%;
+        margin: .4rem .4rem;
+    }
+}
+
+@media only screen and (max-width: 412px) {
+    .calculator{
+        width: 70%;
+        height: 80%;
+    }
+}
