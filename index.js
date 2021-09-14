@@ -8,6 +8,14 @@ input.addEventListener("change",()=>{
     expression=input.value
 })
 
+//enter key press for the result 
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+     event.preventDefault();
+     equal.click();
+    }
+});
+
 equal.addEventListener("click", ()=>{
     let answer
     try {

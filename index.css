@@ -111,13 +111,15 @@ input:focus{
 }
 
 .equal {
-  background-color: crimson;
-  height: 100%;
-  display: flex;
-  font-size: 2rem;
-  font-weight: 900;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    background-color: crimson;
+    height: 92%;
+    display: flex;
+    font-size: 2rem;
+    font-weight: 900;
+    color: white;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn{
@@ -158,6 +160,12 @@ footer .footer{
         height: 20%;
         margin: .4rem .4rem;
     }
+    .equal-container{
+        width: 22%;
+    }
+    .equal{
+        height: 98%;
+    }
 }
 @media only screen and (max-width: 600px) {
     .item{
@@ -165,11 +173,27 @@ footer .footer{
         height: 20%;
         margin: .4rem .4rem;
     }
+    .equal-container{
+        width: 30%;
+    }
 }
 
 @media only screen and (max-width: 420px) {
     .calculator{
         width: 90%;
         height: 90%;
+    }
+    .equal-container{
+        width: 23%;
+        margin-left: 1rem;
+    }
+    .num-point-c{
+        justify-content: space-between;
+    }
+    .item{
+        width: 26%;
+    }
+    .operator{
+        width: 20%;
     }
 }
